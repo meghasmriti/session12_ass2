@@ -1,0 +1,50 @@
+
+1. How are worker, executor and task related to each other?
+
+Workers are the slave daemon in Spark responsible for computation.Workers hold many executors, for many applications. One application has executors on many workers.
+
+Workers contain executors for driving out the computations.
+Executors are worker nodes' processes in charge of running individual tasks in a given Spark job. They are launched at the beginning of a Spark application and typically run for the entire lifetime of an application.
+
+
+
+2. What are the key features of Spark?
+
+    RDD.(Resilient Distributed Datasets)
+    DataFrame. ...
+    DAG based execution
+    Rich sets of API
+    Data caching( In memory processing)
+    Real Time Stream Processing
+    Strong ecosystem tool support
+    Unified platform.
+
+3.What is Spark Driver?
+
+The spark driver is the program that declares the transformations and actions on RDDs of data and submits such requests to the master. In practical terms, the driver is the program that creates the SparkContext, connecting to a given Spark Master.
+
+4.What are the benefits of Spark over MapReduce?
+
+Real-Time Big Data Analysis:
+Spark claims to process data 100x faster than MapReduce, while 10x faster with the disks.
+
+Spark RDD: RDD stands for Resilient Distributed Dataset which can trackback and complete a task instead of having to start from scratch in case of failure during distributed/batch processing.
+
+Easy to program:
+Apache spark is Easy to program and does not require any abstractions. whereas Hadoop mapreduce is Difficult to program and requires abstractions.
+
+In-built interactive mode.:
+
+Apache spark has an inbuilt interacrive mode unlike mapreduce.
+
+Modification of data:
+
+Programmers can modify the data in real-time through Spark streaming.
+while in Hadoop mapreduce Allows you to just process a batch of stored data.
+
+
+
+5.What is Spark Executor
+
+Workers contain executors for driving out the computations.
+Executors are worker nodes' processes in charge of running individual tasks in a given Spark job. They are launched at the beginning of a Spark application and typically run for the entire lifetime of an application.
